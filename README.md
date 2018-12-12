@@ -1,4 +1,5 @@
-# README
+# rails-todo-api
+[![Maintainability](https://api.codeclimate.com/v1/badges/4746ccb9d80923451bbe/maintainability)](https://codeclimate.com/github/Duuun/rails-todo-api/maintainability)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
@@ -22,3 +23,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+## Author
+Duuun
+
+## License
+MIT
