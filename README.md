@@ -2,6 +2,8 @@
 [![Build Status](https://travis-ci.org/Duuun/rails-todo-api.svg?branch=master)](https://travis-ci.org/Duuun/rails-todo-api)
 [![Coverage Status](https://coveralls.io/repos/github/Duuun/rails-todo-api/badge.svg?branch=master)](https://coveralls.io/github/Duuun/rails-todo-api?branch=master)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4746ccb9d80923451bbe/maintainability)](https://codeclimate.com/github/Duuun/rails-todo-api/maintainability)
+![](https://img.shields.io/badge/release-v0.1.0-blue.svg)
+![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
