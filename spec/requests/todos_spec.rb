@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Todos API', type: :request do
   let!(:todos) { create_list(:todo, 10) }
-  let(:todos) { todos.first.id }
+  let(:todo_id) { todos.first.id }
 
   # Test suite for GET /todos
   describe 'GET /todos' do
@@ -20,7 +20,7 @@ RSpec.describe 'Todos API', type: :request do
 
   # Test suite for GET /todos/:id
   describe 'GET /todos/:id' do
-    before { get "todos/#{todo_id}" }
+    before { get "/todos/#{todo_id}" }
 
     context 'when the record exists' do
       it 'returns the todo' do
@@ -41,7 +41,7 @@ RSpec.describe 'Todos API', type: :request do
       end
 
       it 'returns a not found message' do
-        expect(response.body).to match(/Coundn't find Todo/)
+        expect(response.body).to match(/Couldn't find Todo/)
       end
     end
   end
@@ -63,7 +63,7 @@ RSpec.describe 'Todos API', type: :request do
       end
     end
 
-    context 'when the request is invaild' do
+    context 'when the request is invalid' do
       before { post '/todos', params: { title: 'Foobar' } }
 
       it 'returns status code 422' do
@@ -81,7 +81,7 @@ RSpec.describe 'Todos API', type: :request do
     let(:valid_attributes) { { title: 'Shopping' } }
 
     context 'when the record exists' do
-      before { put "todos/#{todo_id}", params: valid_attributes}
+      before { put "/todos/#{todo_id}", params: valid_attributes }
 
       it 'updates the record' do
         expect(response.body).to be_empty
@@ -95,7 +95,7 @@ RSpec.describe 'Todos API', type: :request do
 
   # Test suite for DELETE /todos/:id
   describe 'DELETE /todos/:id' do
-    before { delete "todos/#{todo_id}" }
+    before { delete "/todos/#{todo_id}" }
 
     it 'returns status code 204' do
       expect(response).to have_http_status(204)
