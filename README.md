@@ -8,18 +8,16 @@ This repo is an RESTful api for creating a todo list using Rails' api mode
 
 ## API end-points
 
-| Verb | URI Pattern | Controller#Action |
-| :--- | ----------: | :---------------: |
-| POST |     /signup |       This        |
-| POST |      /login |      column       |
-| GET  |     /logout |       will        |
-| GET  |      /todos |        be         |
-| POST |      /todos |      center       |
-| GET  |  /todos/:id |      aligned      |
-| GET  |     aligned |      aligned      |
-| GET  |     aligned |      aligned      |
-| GET  |     aligned |      aligned      |
-| GET  |     aligned |      aligned      |
+| Verb   |      URI Pattern |        Functionality        |
+| :----- | ---------------: | :-------------------------: |
+| GET    |           /todos |       List all todos        |
+| POST   |           /todos |      Create a new todo      |
+| GET    |       /todos/:id |         Get a todo          |
+| PUT    |       /todos/:id |        Update a todo        |
+| DELETE |       /todos/:id | Delete a todo and its items |
+| GET    | /todos/:id/items |       Get a todo item       |
+| PUT    | /todos/:id/items |     Update a todo item      |
+| DELETE | /todos/:id/items |     Delete a todo item      |
 
 ## Author
 Duuun
