@@ -30,6 +30,7 @@ class ItemsController < ApplicationController
     head :no_content
   end
 
+  # private
   private
 
   def item_params

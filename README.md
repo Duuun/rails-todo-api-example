@@ -5,7 +5,7 @@
 ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 This repo is an RESTful api for creating a todo list using Rails' api mode
-hog
+
 ## API end-points
 
 | Verb   |      URI Pattern |        Functionality        |
