@@ -1,12 +1,8 @@
 language: ruby
-
 rvm:
-  - 2.5.0
-
+- 2.5.0
 script:
-  - bundle exec rspec
-
+- bundle exec rspec
 notifications:
-  email: false
-  slack: daimura:2UBlIjt9RSkHsTHkHsx6Bxso
-    secure: ENV["TRAVIS_TOKEN"]
+  slack:
+    secure: Go36tREFQW6+/MlRbibFTD/72+LicxfqPxj+1X0TQJ/Bt4JrkS+Nbvc5aG4lSrzCZDm6eyyZWC4Ugt/sMa1naZNCmuWv3domEDLwVVD7sw/nN4YejRVa34iTM5ylSJPYKg3MACInY2KsT78ebD8fwfwYQn9Hg+EHpr1TDd30i3aYhLksbmziVQMY2lLrk4Kntf7mcQY/V/kOTaiQjqlVPYAq1YF0yMw3Q6lkkmkb0DYBJOeF7S6oZeLu01Bcophq9xlQfp1vQY32h+pg11tpJ/WAY+PB/8RORJqOtZl3krMaJbFtXSHpGE5yYibYdt25BBlstEgOU7nIB9SjQ7F0CzQqxTTh+qu8BbrPjFpJmRF7pqpkQGhEs14NaOKonLKwITYRqDjAUG8+76eNcyis2NW8BZ6CN6aF2fFa4Mz0PiXfydE0xjH4jtX5DUzCoF7RjTruFivbU0j4wy1GNAYbKgBPxGB5u1Y+1cFIc5/9K9sLHS4QHgwZAhFu3Hm+kVkdhvyvJMri9H4RqEvJqZfgUkhkozq0K02wm+mECGZrNWw/kHEPSHGz2zt12F21HMDgzKXq29p7oeahN6dqMOpt7Gm6b0SWnLB0VLACU2Qu6MHgm3YCsDu0AS/ovwy+5dfPDpTtpjDbbPs1+Xvkd/dE7Sx/nPErfKOL9YJnyJaVRec=
