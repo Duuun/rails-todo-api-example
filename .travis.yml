@@ -8,5 +8,5 @@ script:
 
 notifications:
   email: false
-  slack:
+  slack: daimura:2UBlIjt9RSkHsTHkHsx6Bxso
     secure: ENV["TRAVIS_TOKEN"]
