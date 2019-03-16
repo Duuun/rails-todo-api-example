@@ -5,3 +5,8 @@ rvm:
 
 script:
   - bundle exec rspec
+
+notifications:
+  email: false
+  slack:
+    secure: ENV["TRAVIS_TOKEN"]
